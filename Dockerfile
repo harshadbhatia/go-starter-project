@@ -8,7 +8,7 @@ RUN go get github.com/githubnemo/CompileDaemon
 
 RUN apk add bash
 
-ENTRYPOINT go mod tidy && CompileDaemon -command="./starter"
+ENTRYPOINT go mod tidy && CompileDaemon -command="./dcot"
 
 
 FROM golang:alpine as release
@@ -22,6 +22,6 @@ RUN go build
 
 # RUN apk add bash
 
-ENTRYPOINT ["./starter"]
+ENTRYPOINT ["./dcot"]
 
 

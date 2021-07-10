@@ -1,17 +1,19 @@
 package main
 
 import (
-	"net/http"
+	"os"
+	"log"
 
-	"github.com/gin-gonic/gin"
+	c "dcot/commands"
+
 )
 
 func main() {
-	r := gin.New()
-
-	r.GET("/", func(c *gin.Context) {
-		c.String(http.StatusOK, "Hello World!")
-	})
-
-	r.Run()
+	c.Info()
+	c.CommandList()
+	err := c.App.Run(os.Args)
+	if err != nil {
+		log.Fatal(err)
+	}
 }
+

@@ -1,4 +1,4 @@
-# Basic Starter go project with Dameon watcher
+# Basic dcot go project with Dameon watcher
 
 # Will Improve this with time but for now gives you go development environment with Gin
 

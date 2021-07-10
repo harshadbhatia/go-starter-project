@@ -8,7 +8,7 @@ install-go:
 
 start:
 	cd src && \
-	go mod init starter && \
+	go mod init dcot && \
 	go mod tidy
 
 build:
