@@ -6,3 +6,15 @@
 
 `install-go` Download Installer on linux and installs latest go
 `build` Build your project
+
+### Usage 
+
+```
+docker exec -it go bash
+./dcot process <filename>
+
+Example
+./dcot process data/example.csv
+./dcot process data/test.csv
+
+```

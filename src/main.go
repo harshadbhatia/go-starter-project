@@ -1,19 +1,14 @@
 package main
 
 import (
-	"os"
-	"log"
+	// "os"
+	// "log"
 
-	c "dcot/commands"
+	"dcot/cmd"
 
 )
 
 func main() {
-	c.Info()
-	c.CommandList()
-	err := c.App.Run(os.Args)
-	if err != nil {
-		log.Fatal(err)
-	}
+	cmd.Execute()
 }
 
